@@ -645,9 +645,14 @@
                         >Zostaw swoje dane w formularzu poniżej</a
                     >
                     <div class="labels">
-                        <label for="user_name" class="icon-label">
-                            <span class="title-label">Imie</span>
-                            <svg
+                        <label for="user_name" class="title-label">Imie</label>
+                        <div class="icon-label">
+                            <input
+                                type="text"
+                                name="imie"
+                                id="user_name"
+                                class="input-modal"
+                            /><svg
                                 class="icon-label-item"
                                 width="12px"
                                 height="12px"
@@ -656,15 +661,17 @@
                                     href="./images/icons.svg/person-black.svg#icon-person-black"
                                 ></use>
                             </svg>
+                        </div>
+                        <label for="phone_number" class="title-label"
+                            >Telefon</label
+                        >
+                        <div class="icon-label">
                             <input
-                                type="text"
-                                name="imie"
-                                id="user_name"
+                                type="tel"
+                                name="phone_number"
+                                id="phone_number"
                                 class="input-modal"
                             />
-                        </label>
-                        <label class="icon-label" for="phone_number">
-                            <span class="title-label">Telefon</span>
                             <svg
                                 class="icon-label-item"
                                 width="18px"
@@ -674,15 +681,14 @@
                                     href="./images/icons.svg/phone-black.svg#icon-phone-black"
                                 ></use>
                             </svg>
+                        </div>
+                        <label for="email" class="title-label">Email</label>
+                        <div class="icon-label">
                             <input
-                                type="tel"
-                                name="phone_number"
-                                id="phone_number"
+                                type="email"
+                                name="email"
                                 class="input-modal"
                             />
-                        </label>
-                        <label class="icon-label" for="email"
-                            ><span class="title-label">Email</span>
                             <svg
                                 class="icon-label-item"
                                 width="15px"
@@ -692,13 +698,7 @@
                                     href="./images/icons.svg/email-black.svg#icon-email-black"
                                 ></use>
                             </svg>
-                            <input
-                                type="email"
-                                name="email"
-                                class="input-modal"
-                            />
-                        </label>
-
+                        </div>
                         <label class="icon-label">
                             <span class="title-label">Komentarz</span>
                             <textarea

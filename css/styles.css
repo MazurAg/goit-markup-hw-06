@@ -252,6 +252,11 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition-duration: 400ms;
+    padding: 40px;
+ /*display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;*/
 }
 .signup-form {
     position: relative;
@@ -276,16 +281,10 @@ ul {
 }
 .icon-label {
     position: relative;
-    left: 40px;
-    top: 75px;
     display: inline-flex;
     gap: 4px;
     flex-direction: column;
     justify-content: center;
-    letter-spacing: 0.01em;
-    color: #757575;
-    font-size: 12px;
-    line-height: 1.166;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -300,6 +299,8 @@ ul {
     left: 15px;
 }
 .labels {
+    position: absolute;
+    top: 75px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -328,8 +329,8 @@ textarea {
     display: inline-flex;
 }
 .checkbox_control {
-    top: 110px;
-    left: 58px;
+    top: 410px;
+    left: 15px;
     position: relative;
     display: inline-flex;
     flex: 0 0 auto;
@@ -406,8 +407,8 @@ textarea {
     color: #757575;
 }
 .statement-check {
-    top: 110px;
-    left: 58px;
+    top: 410px;
+    left: 10px;
     position: relative;
     display: inline-flex;
     gap: 4px;
@@ -431,7 +432,6 @@ textarea {
 .mod-send:hover,
 .mod-send:focus {
     box-shadow: 0 0 3px 0 #212121;
-    border-color: #212121;
 }
 .is-hidden {
     pointer-events: none;
