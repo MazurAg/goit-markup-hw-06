@@ -602,6 +602,32 @@
                         </ul>
                     </div>
                 </div>
+                <div class="newsletter">
+                    <a class="news-singup">Zapisz się do newslettera</a>
+                    <form
+                        class="newsletter-form"
+                        name="signup_form"
+                        autocomplete="on"
+                        novalidate
+                    >
+                        <label>
+                            <input
+                                class="news-label"
+                                type="email"
+                                name="email"
+                                id="user_email"
+                                placeholder="Email"
+                        /></label>
+                        <button type="submit" class="btn-signup">
+                            <span class="signup">Zapisz się</span>
+                            <svg class="icon-signup" width="24px" height="24px">
+                                <use
+                                    href="./images/icons.svg/send.svg#icon-send"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -609,6 +635,105 @@
                 <button type="button" class="btn-close" data-modal-close>
                     X
                 </button>
+                <form
+                    class="form"
+                    name="signup_form"
+                    autocomplete="on"
+                    novalidate
+                >
+                    <a class="title-modal"
+                        >Zostaw swoje dane w formularzu poniżej</a
+                    >
+                    <div class="labels">
+                        <label for="user_name" class="icon-label">
+                            <span class="title-label">Imie</span>
+                            <svg
+                                class="icon-label-item"
+                                width="12px"
+                                height="12px"
+                            >
+                                <use
+                                    href="./images/icons.svg/person-black.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                            <input
+                                type="text"
+                                name="imie"
+                                id="user_name"
+                                class="input-modal"
+                            />
+                        </label>
+                        <label class="icon-label" for="phone_number">
+                            <span class="title-label">Telefon</span>
+                            <svg
+                                class="icon-label-item"
+                                width="18px"
+                                height="18px"
+                            >
+                                <use
+                                    href="./images/icons.svg/phone-black.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                            <input
+                                type="tel"
+                                name="phone_number"
+                                id="phone_number"
+                                class="input-modal"
+                            />
+                        </label>
+                        <label class="icon-label" for="email"
+                            ><span class="title-label">Email</span>
+                            <svg
+                                class="icon-label-item"
+                                width="15px"
+                                height="12px"
+                            >
+                                <use
+                                    href="./images/icons.svg/email-black.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                            <input
+                                type="email"
+                                name="email"
+                                class="input-modal"
+                            />
+                        </label>
+
+                        <label class="icon-label">
+                            <span class="title-label">Komentarz</span>
+                            <textarea
+                                name="feedback"
+                                placeholder="Wprowadź tekst"
+                                class="comment"
+                            ></textarea>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <div class="checkbox_control">
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="check"
+                                value="1"
+                                class="checkbox_input"
+                            />
+                            <label class="checkbox_label" for="check"></label>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label class="statement-check"
+                            ><span class="statement"
+                                >Oświadczam iż akceptuję</span
+                            >
+                            <a href="#" class="statute">Regulamin</a>
+                            <span class="statement">i</span>
+                            <a href="#" class="statute"
+                                >Politykę prywatności</a
+                            ></label
+                        >
+                    </div>
+                    <button type="submit" class="mod-send">Wyślij</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
