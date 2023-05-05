@@ -285,7 +285,6 @@ ul {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-label:hover,
 .icon-label:focus-within {
     fill: var(--active-color);
 }
@@ -316,7 +315,6 @@ textarea {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-modal:hover,
 .input-modal:focus {
     border-color: var(--active-color);
 }
@@ -387,7 +385,6 @@ textarea {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment:hover,
 .comment:focus {
     border-color: var(--active-color);
 }
@@ -892,10 +889,6 @@ h2 {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-signup:hover,
-.btn-signup:focus {
-    border-color: #ffffff;
 }
 .signup {
     letter-spacing: 0.06em;
